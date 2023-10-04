@@ -69,7 +69,7 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView">
 
         <Button
-            android:id="@+id/buttonMenu1"
+            android:id="@+id/buttonBookKid"
             android:layout_width="wrap_content"
             android:layout_height="65dp"
             android:backgroundTint="#68FFB7"
