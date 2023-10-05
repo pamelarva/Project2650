@@ -1,5 +1,6 @@
 package com.example.project2650
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
@@ -15,6 +16,8 @@ class HomeActivity : AppCompatActivity() {
 
         //event button book kid
         btnBookKid.setOnClickListener{
+            val intentBookKidActivity = Intent(this, BookKidActivity::class.java)
+            startActivity(intentBookKidActivity)
         }
     }
 }
