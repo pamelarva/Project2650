@@ -13,11 +13,16 @@ class HomeActivity : AppCompatActivity() {
 
         //instance
         val btnBookKid: Button = findViewById(R.id.buttonBookKid)
+        val btnReading: Button = findViewById(R.id.buttonReading)
 
         //event button book kid
         btnBookKid.setOnClickListener{
             val intentBookKidActivity = Intent(this, BookKidActivity::class.java)
             startActivity(intentBookKidActivity)
+        }
+        btnReading.setOnClickListener {
+            val intentReadingActivity = Intent (this, ReadingActivity::class.java)
+            startActivity(intentReadingActivity)
         }
     }
 }

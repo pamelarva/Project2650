@@ -77,7 +77,7 @@
             android:textColor="@color/black" />
 
         <Button
-            android:id="@+id/buttonMenu2"
+            android:id="@+id/buttonReading"
             android:layout_width="wrap_content"
             android:layout_height="65dp"
             android:backgroundTint="#FF9BE3"
@@ -85,7 +85,7 @@
             android:textColor="@color/black" />
 
         <Button
-            android:id="@+id/buttonMenu3"
+            android:id="@+id/buttonSpace"
             android:layout_width="wrap_content"
             android:layout_height="65dp"
             android:backgroundTint="#68FFf6"
@@ -93,7 +93,7 @@
             android:textColor="@color/black" />
 
         <Button
-            android:id="@+id/buttonMenu4"
+            android:id="@+id/buttonMore"
             android:layout_width="wrap_content"
             android:layout_height="65dp"
             android:backgroundTint="#FFE484"
