@@ -5,6 +5,8 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import androidx.fragment.app.Fragment
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 
 class HomeActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -14,6 +16,33 @@ class HomeActivity : AppCompatActivity() {
         //instance
         val btnBookKid: Button = findViewById(R.id.buttonBookKid)
         val btnReading: Button = findViewById(R.id.buttonReading)
+        val rvBuku:RecyclerView = findViewById(R.id.recyclerViewBuku)
+        //set layout manager di RecyclerView
+        rvBuku.layoutManager = LinearLayoutManager(this)
+        //list data buku
+        val data = ArrayList<BukuModel>()
+        data.add(
+            BukuModel(R.drawable.book1, "Emi's Beach Adventure",
+            "Lorem Ipsum Dolar Sit Amet Lorem Ipsum Dolar Sit Amet"))
+        data.add(
+            BukuModel(R.drawable.book2, "Ade's Adventure",
+                "Lorem Ipsum Dolar Sit Amet Lorem Ipsum Dolar Sit Amet"))
+        data.add(
+            BukuModel(R.drawable.book4, "Mermaid To Rescue",
+                "Lorem Ipsum Dolar Sit Amet Lorem Ipsum Dolar Sit Amet"))
+        data.add(
+            BukuModel(R.drawable.book1, "Emi's Beach Adventure",
+                "Lorem Ipsum Dolar Sit Amet Lorem Ipsum Dolar Sit Amet"))
+        data.add(
+            BukuModel(R.drawable.book2, "Ade's Adventure",
+                "Lorem Ipsum Dolar Sit Amet Lorem Ipsum Dolar Sit Amet"))
+        data.add(
+            BukuModel(R.drawable.book4, "Mermaid To Rescue",
+                "Lorem Ipsum Dolar Sit Amet Lorem Ipsum Dolar Sit Amet"))
+        //set adapter
+        val adapter = AdapterHome(data)
+        //set adapter ke recyclre view
+        rvBuku.adapter = adapter
 
         //event button book kid
         btnBookKid.setOnClickListener{
