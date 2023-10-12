@@ -73,7 +73,7 @@
             android:layout_width="wrap_content"
             android:layout_height="65dp"
             android:backgroundTint="#68FFB7"
-            android:text="Book"
+            android:text="Book Kid"
             android:textColor="@color/black" />
 
         <Button

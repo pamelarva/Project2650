@@ -23,22 +23,22 @@ class HomeActivity : AppCompatActivity() {
         val data = ArrayList<BukuModel>()
         data.add(
             BukuModel(R.drawable.book1, "Emi's Beach Adventure",
-            "Lorem Ipsum Dolar Sit Amet Lorem Ipsum Dolar Sit Amet"))
+            "Buku anak-anak."))
         data.add(
             BukuModel(R.drawable.book2, "Ade's Adventure",
-                "Lorem Ipsum Dolar Sit Amet Lorem Ipsum Dolar Sit Amet"))
+                "Buku anak-anak."))
         data.add(
             BukuModel(R.drawable.book4, "Mermaid To Rescue",
-                "Lorem Ipsum Dolar Sit Amet Lorem Ipsum Dolar Sit Amet"))
+                "Buku anak-anak."))
         data.add(
             BukuModel(R.drawable.book1, "Emi's Beach Adventure",
-                "Lorem Ipsum Dolar Sit Amet Lorem Ipsum Dolar Sit Amet"))
+                "Buku anak-anak."))
         data.add(
             BukuModel(R.drawable.book2, "Ade's Adventure",
-                "Lorem Ipsum Dolar Sit Amet Lorem Ipsum Dolar Sit Amet"))
+                "Buku anak-anak."))
         data.add(
             BukuModel(R.drawable.book4, "Mermaid To Rescue",
-                "Lorem Ipsum Dolar Sit Amet Lorem Ipsum Dolar Sit Amet"))
+                "Buku anak-anak."))
         //set adapter
         val adapter = AdapterHome(data)
         //set adapter ke recyclre view
