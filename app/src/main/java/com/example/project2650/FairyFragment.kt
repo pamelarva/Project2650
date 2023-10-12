@@ -30,7 +30,7 @@ class FairyFragment : Fragment() {
             BukuModel(R.drawable.world, "Unseen World",
                 "Buku anak-anak."))
 
-        val adapter = AdapterHome(data)
+        val adapter = AdapterFairy(data)
         rvBuku.adapter = adapter
 
         return rootView
