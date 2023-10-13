@@ -30,7 +30,7 @@ class ScienceFragment : Fragment() {
             BukuModel(R.drawable.book4, "Mermaid To Rescue",
                 "Buku anak-anak."))
 
-        val adapter = AdapterScience(data)
+        val adapter = AdapterHome(data)
         rvBuku.adapter = adapter
 
         return rootView

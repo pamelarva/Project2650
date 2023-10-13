@@ -30,7 +30,7 @@ class FableFragment : Fragment() {
             BukuModel(R.drawable.jungle, "Jungle Story",
                 "Buku anak-anak."))
 
-        val adapter = AdapterFable(data)
+        val adapter = AdapterHome(data)
         rvBuku.adapter = adapter
 
         return rootView
